@@ -1,0 +1,120 @@
+.list {
+    width: 90%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.item {
+    width: 20%;
+    list-style: none;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+    height: auto;
+}
+.item.loading {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+    margin: 10px 20px;
+}
+.item.loading .text {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #ddd;
+}
+.item.loading::after,
+.item.loading .text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #ddd, #fff 50%, #ddd);
+    animation: Skeletonloading 2s infinite alternate;
+}
+.img {
+    width: 100%;
+    border-radius: 16px;
+}
+.text {
+    width: 100%;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.Button {
+    width: 90%;
+    margin-left: 5%;
+}
+.reset {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+@keyframes Skeletonloading {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 50%;
+    }
+}
+@media only screen and (max-width: 539px) {
+    .item {
+        padding-bottom: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+    /* Điện thoại màn hình lớn thua IPAD */
+    .item {
+        padding-bottom: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    /* IPAD  */
+    .item {
+        padding-bottom: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 33.33333333333333%;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+    /* IPAD Pro */
+    .item {
+        padding-bottom: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+    /* PC lớn hơn 1200px */
+    .item {
+        padding-bottom: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+@media only screen and (min-width: 1320px) {
+    /* PC lớn hơn 1320px */
+}

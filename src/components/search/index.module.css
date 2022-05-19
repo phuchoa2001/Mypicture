@@ -1,0 +1,31 @@
+.search {
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.list {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 539px) {
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+    /* Điện thoại màn hình lớn thua IPAD */
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    /* IPAD  */
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+    /* IPAD Pro */
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+    /* PC lớn hơn 1200px */
+    .search {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1320px) {
+    /* PC lớn hơn 1320px */
+    .search {
+        display: none;
+    }
+}

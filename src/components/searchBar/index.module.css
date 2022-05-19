@@ -1,0 +1,38 @@
+.search {
+    display: flex;
+    flex: 1 1 auto;
+    background: #efefef;
+    height: 100%;
+    align-items: center;
+    border-radius: 24px;
+}
+.boxicon {
+    margin: 0px 22px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+}
+.searchicon {
+    color: #767676;
+}
+.input {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+    outline: none;
+    padding: 0px 0px;
+    flex: 1 1 auto;
+}
+.form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

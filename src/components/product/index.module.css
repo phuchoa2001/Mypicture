@@ -1,0 +1,58 @@
+.Product {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.frames {
+    width: 1024px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 20px 0px;
+    border-radius: 32px;
+    padding: 20px;
+    margin: auto;
+}
+.img {
+    width: 100%;
+}
+.name {
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+}
+@media only screen and (max-width: 539px) {
+    .frames {
+        margin: 0;
+        width: 100%;
+        padding: 0px;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+    .frames {
+        margin: 0;
+        width: 100%;
+        padding: 0px;
+    }
+    /* Điện thoại màn hình lớn thua IPAD */
+}
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    .frames {
+        margin: 0;
+        width: 100%;
+        padding: 0px;
+    }
+    /* IPAD  */
+}
+@media only screen and (min-width: 960px) and (max-width: 1139px) {
+    /* IPAD Pro */
+    .frames {
+        margin: 0;
+        width: 100%;
+        padding: 0px;
+    }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1319px) {
+    /* PC lớn hơn 1200px */
+}
+@media only screen and (min-width: 1320px) {
+    /* PC lớn hơn 1320px */
+}
